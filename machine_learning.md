@@ -2,7 +2,7 @@
 
 *"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance tasks in T, as measured by P, improves with experience E."* - Tom Mitchell
 
-##### How does one teach a computer to learn from experience E with respect to some class of tasks T and measure its performance P?
+#### How does one teach a computer to learn from experience E with respect to some class of tasks T and measure its performance P?
 
 We refer to such such programs that learn from experience as ML models: ML models are trained by feeding training data into a ML algorithm.
 
@@ -33,6 +33,10 @@ Think of your model as a hypothesis (a function) which maps input features (or i
 
 ###### something about linear and non-linear relationships
 
+##### How can I tell if my data is linear or non-linear?
+
+`One method is to use train a perceptron classifier, which will converge if the data is linearly separable. In other words, if it gives 100% accuracy that means your data is linear?``
+
 ##### What is the performance measure P and how is it measured?
 
 There are many **evaluation metrics** for determining how the performance measure P but they need to be carefully selected based on the type of problem you are solving. For example, in a classification problem where we want to know where an instance is true or false, we can use the classification accuracy metric which is the simply percentage of correctly classified instances.
@@ -54,3 +58,5 @@ Therefore in this case, another evaluation metric, a confusion matrix can be use
 2. https://machinelearningmastery.com/process-for-working-through-machine-learning-problems/
 3. https://docs.aws.amazon.com/machine-learning/latest/dg/training-ml-models.html
 4. https://www.quora.com/How-can-I-know-if-my-problem-is-linear-or-non-linear-to-choose-the-appropriate-Machine-Learning-algorithm
+5. https://www.quora.com/In-machine-learning-how-can-we-determine-whether-a-problem-is-linear-nonlinear
+6. https://stats.stackexchange.com/questions/182329/how-to-know-whether-the-data-is-linearly-separable
