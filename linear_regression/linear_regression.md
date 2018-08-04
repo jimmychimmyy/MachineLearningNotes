@@ -6,11 +6,22 @@ The classic example of Linear Regression is to predict housing prices given some
 
 #### How does it work?
 
-Think `y = mx + b`
+##### Think `y = (w0) + (w1)(x)`
 
-`y = output`
-`m = slope`
-`b = constant`
+1. `y = output (dependent variable)`
+2. `x = input (independent variable)`
+3. `w0 = coefficent`
+4. `w1 = coefficent`
+
+x and y are given by our training data
+
+*To learn our data, we need to find the values of w0 and w1.*
+
+Once we know the values of w0 and w1, we can use this equation to predict y for a new x.
+
+To summarize, our model learns our coefficents and is then able to make new predictions.
+
+#### Cost Function
 
 ##### Note that:
 Remember that by definition, simple linear regression has a single independent variable and a single dependent variable

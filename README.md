@@ -6,6 +6,11 @@
 
 We refer to such such programs that learn from experience as ML models: ML models are trained by feeding training data into a ML algorithm.
 
+In order to do machine learning we need data, lots and lots of data. This data gives us two variables: x and y, where x is the input to our machine learning problem and y is the output.
+
+One way to understand machine learning is to think of it as searching for a function such that `f(x) = y`. Since we do not know the form of `f(x)`, we try to find a hypothesis function `h(x)` that best approximates `f(x)` such that `h(x) ≈ f(x) = y`.
+
+
 #### What are the different types of ML models/algorithms?
 
 ML models can be broadly categorized into four groups
@@ -35,7 +40,7 @@ Think of your model as a hypothesis (a function) which maps input features (or i
 
 #### How can I tell if my data is linear or non-linear?
 
-`One method is to use train a perceptron classifier, which will converge if the data is linearly separable. In other words, if it gives 100% accuracy that means your data is linear?``
+###### One method is to use train a perceptron classifier, which will converge if the data is linearly separable. In other words, if it gives 100% accuracy that means your data is linear?
 
 #### What is the performance measure P and how is it measured?
 
@@ -44,6 +49,18 @@ There are many **evaluation metrics** for determining how the performance measur
 However, you must be careful in choosing your evaluation metric. The classification accuracy metric performs poorly in certain cases such as when the training data is skewed (e.g. 90% true, 10% false). When your training data is skewed, your model may decide to classify all instances as true since it appears most often. This would still give you a 90% classification accuracy, but would render our model useless.
 
 Therefore in this case, another evaluation metric, a confusion matrix can be used to determine the performance of our model.
+
+#### What is weight and bias?
+
+Weights and biases are the parameters that your model "learn".
+
+Weights and biases are randomly initialize before training and are adjusted during training to minimize the cost function.
+
+#### What is a cost function? (a.k.a error or loss)
+
+A cost function measures how close our predicted values are to the actual values. We want to minimize the cost function to minimize errors.
+
+###### need to do more research on cost function
 
 #### What is the process of applying ML?
 1. Define the problem
@@ -60,3 +77,6 @@ Therefore in this case, another evaluation metric, a confusion matrix can be use
 4. https://www.quora.com/How-can-I-know-if-my-problem-is-linear-or-non-linear-to-choose-the-appropriate-Machine-Learning-algorithm
 5. https://www.quora.com/In-machine-learning-how-can-we-determine-whether-a-problem-is-linear-nonlinear
 6. https://stats.stackexchange.com/questions/182329/how-to-know-whether-the-data-is-linearly-separable
+7. https://towardsdatascience.com/machine-learning-fundamentals-via-linear-regression-41a5d11f5220
+8. https://datascience.stackexchange.com/questions/19099/what-is-weight-and-bias-in-deep-learning
+9. https://www.quora.com/What-is-hypothesis-in-machine-learning
