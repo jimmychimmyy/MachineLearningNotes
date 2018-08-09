@@ -1,10 +1,10 @@
 # Linear Regression
 
 #### Hello, Linear Regression
+Below are links to two samples of linear regression
 
-Here is a link to my [notebook](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression.ipynb) in which I have implemented both simple and multivariable linear regression from scratch.
-
-Here is a link to my [notebook](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression_sklearn.ipynb) in which I implement linear regression using sklearn.
+* [my Implementation](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression.ipynb)
+* [using sklearn](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression_sklearn.ipynb)
 
 #### How does it work?
 
