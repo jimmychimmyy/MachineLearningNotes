@@ -1,6 +1,6 @@
 # Linear Regression
 
-#### Hello World Example
+#### Hello, Linear Regression
 
 The classic example of Linear Regression is to predict housing prices given some labeled data.
 
@@ -12,6 +12,10 @@ The classic example of Linear Regression is to predict housing prices given some
 2. `x = input (independent variable)`
 3. `w0 = coefficent`
 4. `w1 = coefficent`
+
+Let m = the number of instances (number of rows)
+
+Let n = number of features (number of columns)
 
 x and y are given by our training data
 
