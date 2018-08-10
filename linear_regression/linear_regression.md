@@ -1,10 +1,12 @@
 # Linear Regression
 
 #### Hello, Linear Regression
-Below are links to two samples of linear regression
+Linear regression is one of the best starting points to learn machine learning. It is a supervised regression algorithm, meaning it learns some mapping from a set of input variables to some continuous output variable. Linear regression learns this mapping by fitting coefficients in a linear equation that reduces error in estimating some desired output.
+
+Below are links to see linear regression in action
 
 * [from scratch](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression.ipynb)
-* [using sklearn](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression_sklearn.ipynb)
+* [using sklearn]()
 
 #### How does it work?
 
@@ -71,7 +73,7 @@ Remember that, by definition, simple linear regression has a single independent 
 3. Repeat step 2 for some number of iterations (You decide number of iterations)
 
 ##### Parameters:
-* X - matrix where each row (m) is an instance, each column (n) is a feature
+* X - 2D matrix where each row (m) is an instance, each column (n) is a feature
 * Y - vector where each element is an instance
 
 *For multivariable linear regression, X usually takes the form of a matrix where the number of rows m is the number of instances and the number of columns n is the number of features or variables. Y is still a vector where each element corresponds to an instance. You should think of each row of X corresponding to an element in Y.*
@@ -88,7 +90,7 @@ Multivariable linear regression is
 
 There are many choices of cost functions for linear regression, I will be going over one of the most popular cost functions: **Mean Squared Error (MSE)**.
 
-What exactly is MSE? Imagine have an arbitrary set of points [1, 2, 3, 4, 5, 6, 7]. The mean of this set is 4. Error tells us, is how far away from the mean each of the points in the set are. For example, there is a difference of 3 between the point 1 and the mean. MSE is simply the square of the difference, which for the case of point 1 is 9 (since 3^2 = 9). Essentially, the farther the points lie from the mean, the larger our MSE will be. The goal of linear regression is to find a best fit line with the smallest possible MSE.
+What exactly is MSE? Imagine we have an arbitrary set of points [1, 2, 3, 4, 5, 6, 7]. The mean of this set is 4. Error tells us how far away from the mean each of the points in the set are. For example, there is a difference of 3 between 1 (the first element) and the mean. MSE is simply the square of the difference, which for the case of 1 is 9 (since 3^2 = 9). Basically, the farther the points lie from the mean, the larger our MSE will be. The goal of linear regression is to find a best fit line with the smallest possible MSE.
 
 What is the point of squaring the error? We square the error for two reasons:
 1. to ensure that the difference is always positive
@@ -127,3 +129,5 @@ When you are faced with a regression problem, needing to map some variables to s
 1. https://www.youtube.com/watch?v=ZkjP5RJLQF4 <- this is an amazing source to really grasp the concept of linear regression
 2. http://www.statisticssolutions.com/assumptions-of-linear-regression/
 3. http://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#id3
+4. http://www.holehouse.org/mlclass/04_Linear_Regression_with_multiple_variables.html
+5. http://www.statisticshowto.com/mean-squared-error/
