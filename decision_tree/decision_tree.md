@@ -17,8 +17,8 @@ Our job, when creating a decision tree, is to figure out what features to use in
 
 #### Algorithm:
 
-1. Calculate [entropy](#entropy)/gini-coefficient of every feature in set S
-2. Split set S into subsets using feature with minimum entropy/gini-coefficient
+1. Calculate [Gini](#gini) or [Entropy](#entropy) of every feature in set S
+2. Split set S into subsets using feature with minimum Gini/Entropy
 3. Add node to decision tree with this feature
 4. Repeat above steps for all remaining features
 
@@ -28,30 +28,46 @@ Our job, when creating a decision tree, is to figure out what features to use in
 
 ##### Hyperparameters:
 
+* Minimum Sample per Leaf
+* Decision Tree Depth
+* Number of Random Splits per Node
 
-#### Cost Function
+#### <a name="cost"></a>Cost Function
 
-We will be using the **Gini Index** as the cost function for decision trees. A Gini score tells you how well a point in your data splits your total data into two classes. A Gini score of 0 is a perfect split: imagine you have two normal distributions sitting side by side with no overlap. A Gini score of 0.5 is the worst possible split: imagine you have the same two normal distributions but they overlap, almost seemingly they make a single multimodal distribution.
+We will be using the [Gini Index](#gini) as the cost function for decision trees.
 
 ###### add image for clarification
 
-#### What is Greedy Splitting?
+#### <a name="gini"></a>What is Gini?
+
+Used to minimize probability of misclassification.
+
+A Gini score tells you how well a point in your data splits your total data into two classes. A Gini score of 0 is a perfect split: imagine you have two normal distributions sitting side by side with no overlap. A Gini score of 0.5 is the worst possible split: imagine you have the same two normal distributions but they overlap, almost seemingly they make a single multimodal distribution.
 
 #### <a name="entropy"></a>What is Entropy?
 
-#### What is a Stopping Criterion?
+Measures impurity.
 
-#### What is Pruning?
+#### <a name="split"></a>What is a Split?
 
-#### How to evaluate performance of Decision Tree
+A split (in the dataset) involves one feature and one value for said feature that is used to divide the dataset into two groups?
 
-#### Assumptions of Decision Tree
+#### <a name="greedy"></a>What is Greedy Splitting?
 
-#### Things to watch out for
+#### <a name="stopping"></a>What is a Stopping Criterion?
 
-#### Tips and Tricks
+#### <a name="pruning"></a>What is Pruning?
+
+#### <a name="evaluate"></a>How to evaluate performance of Decision Tree
+
+#### <a name="assumptions"></a>Assumptions of Decision Tree
+
+#### <a name="watchout"></a>Things to watch out for
+
+#### <a name="tips"></a>Tips and Tricks
 
 #### Sources
 1. https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/
 2. https://en.wikipedia.org/wiki/ID3_algorithm
 3. https://datascience.stackexchange.com/questions/10228/gini-impurity-vs-entropy
+4. http://www.bogotobogo.com/python/scikit-learn/scikt_machine_learning_Decision_Tree_Learning_Informatioin_Gain_IG_Impurity_Entropy_Gini_Classification_Error.php
