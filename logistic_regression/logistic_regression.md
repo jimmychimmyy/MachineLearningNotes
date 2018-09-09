@@ -11,9 +11,9 @@ Below are links to see Logistic Regression in action
 
 #### Algorithm:
 
-##### Parameters:
+###### Parameters:
 
-##### Hyperparameters:
+###### Hyperparameters:
 
 #### What is an Activation Function?
 

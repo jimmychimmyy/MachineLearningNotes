@@ -27,13 +27,13 @@ To learn our data, we need to find the values of b and ϴ. Once we know the valu
 2. Perform gradient descent to update b and ϴ
 3. Repeat step 2 for some number of iterations
 
-##### Parameters:
+###### Parameters:
 * X - vector where each element is an instance
 * Y - vector where each element is an instance
 
 *It might be easier to think of X and Y as column vectors where m = the number of instances (total number of rows), n = number of features (total number of columns). Also note that X and Y must have the same number of rows.*
 
-##### Hyperparameters:
+###### Hyperparameters:
 * learning rate
 * epochs (number of iterations)
 

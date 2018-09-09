@@ -22,11 +22,11 @@ Our job, when creating a decision tree, is to figure out what features to use in
 3. Add node to decision tree with this feature
 4. Repeat above steps for all remaining features
 
-##### Parameters:
+###### Parameters:
 * X - vector where each element is an instance
 * Y - vector where each element is an instance
 
-##### Hyperparameters:
+###### Hyperparameters:
 
 * Minimum Sample per Leaf
 * Decision Tree Depth
@@ -38,11 +38,13 @@ We will be using the [Gini Index](#gini) as the cost function for decision trees
 
 ###### add image for clarification
 
-#### <a name="gini"></a>What is Gini?
+#### <a name="gini"></a>What is Gini Index (impurity)?
 
 Used to minimize probability of misclassification.
 
 A Gini score tells you how well a point in your data splits your total data into two classes. A Gini score of 0 is a perfect split: imagine you have two normal distributions sitting side by side with no overlap. A Gini score of 0.5 is the worst possible split: imagine you have the same two normal distributions but they overlap, almost seemingly they make a single multimodal distribution.
+
+###### note that gini impurity and gini coefficient are not the same thing
 
 #### <a name="entropy"></a>What is Entropy?
 
@@ -52,7 +54,16 @@ Measures impurity.
 
 A split (in the dataset) involves one feature and one value for said feature that is used to divide the dataset into two groups?
 
+To perform a split:
+1. choose a split value
+2. split dataset into two subsets based on split value (smaller and larger than)
+3. evaluate cost of split
+4. repeat steps 1 - 3 for all possible splits
+5. keep the split value where cost is smallest
+
 #### <a name="greedy"></a>What is Greedy Splitting?
+
+Our decision tree's splitting is greedy. This means that it exhaustively searches the dataset for the best possible split and considers only the split with the best immediate result.
 
 #### <a name="stopping"></a>What is a Stopping Criterion?
 
@@ -71,3 +82,4 @@ A split (in the dataset) involves one feature and one value for said feature tha
 2. https://en.wikipedia.org/wiki/ID3_algorithm
 3. https://datascience.stackexchange.com/questions/10228/gini-impurity-vs-entropy
 4. http://www.bogotobogo.com/python/scikit-learn/scikt_machine_learning_Decision_Tree_Learning_Informatioin_Gain_IG_Impurity_Entropy_Gini_Classification_Error.php
+5. http://www.learnbymarketing.com/481/decision-tree-flavors-gini-info-gain/
