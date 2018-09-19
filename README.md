@@ -33,7 +33,9 @@ Which machine learning model you choose depends on the type of data that you hav
 
 Before getting into training, I think it is important to note how training data is fed into a machine learning model. Typically our data is arrange into matrices where each row is a single **instance** or example observations, and each column is a **feature** or variable. Therefore, you can think of a matrix as many instances arranged in rows.
 
-###### add image for clarity
+![TrainingData](https://objectcomputing.com/files/4214/8588/6872/sett2.png "TrainingData")
+
+###### note in this image, Example Value is the target feature
 
 When we train a model, we are actually feeding this matrix row by row into model.
 
@@ -86,3 +88,14 @@ A cost function measures how close our predicted values are to the actual values
 7. https://towardsdatascience.com/machine-learning-fundamentals-via-linear-regression-41a5d11f5220
 8. https://datascience.stackexchange.com/questions/19099/what-is-weight-and-bias-in-deep-learning
 9. https://www.quora.com/What-is-hypothesis-in-machine-learning
+10. https://objectcomputing.com/files/4214/8588/6872/sett2.png
+
+#### TODO
+* neural network notes and implementation
+* decision tree notes and implementation
+* start write up user-user collaborative filtering
+* start random forest
+* start CNN
+* start RNN
+* start SVM
+* start write up for spark (pyspark)
