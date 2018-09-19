@@ -10,5 +10,8 @@ class NeuralNetwork(object):
     def train(self):
         raise NotImplementedError
 
+    def calculate_loss():
+        raise NotImplementedError
+
     def backpropagate(self):
         raise NotImplementedError
