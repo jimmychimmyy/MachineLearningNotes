@@ -4,8 +4,8 @@ Artifical neural networks (ANN) are machine learning models inspired by biologic
 
 Below are links to see a neural network in action
 
-* [from scratch](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/nerual_network/neural_network.ipynb)
-* [using keras](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/nerual_network/keras_neural_network.ipynb)
+* [from scratch](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/neural_network/neural_network.ipynb)
+* [using keras](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/neural_network/keras_neural_network.ipynb)
 
 #### How does it work?
 
@@ -45,7 +45,7 @@ There are numerous ANN architectures but a good rule starting point would be to 
 
 ![TrainingANN](https://cdn-images-1.medium.com/max/1280/1*vLRcDyU-NVyrWJLtYrAhew.jpeg "TrainingANN")
 
-###### *Note that the algorithm I have described here is a cost heavy description of how to build an ANN. In practice, if you are implementing your own ANN you should use the dot product to calculate the sum of the products of nodes and weights. You may look to my [implementation](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/nerual_network/neural_network.ipynb) for more details.*
+###### *Note that the algorithm I have described here is a cost heavy description of how to build an ANN. In practice, if you are implementing your own ANN you should use the dot product to calculate the sum of the products of nodes and weights. You may look to my [implementation](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/neural_network/neural_network.ipynb) for more details.*
 
 ###### Parameters:
 * weights
