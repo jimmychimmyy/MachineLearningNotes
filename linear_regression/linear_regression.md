@@ -6,7 +6,7 @@ Linear regression is one of the best starting points to learn machine learning. 
 Below are links to see linear regression in action
 
 * [from scratch](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/linear_regression/linear_regression.ipynb)
-* [using sklearn]()
+* **TODO** [using sklearn]()
 
 #### How does it work?
 
@@ -86,22 +86,23 @@ Remember that, by definition, simple linear regression has a single independent 
 
 Multivariable linear regression is
 
-#### Cost Function
+#### Cost Function: Mean Squared Error
 
 There are many choices of cost functions for linear regression, I will be going over one of the most popular cost functions: **Mean Squared Error (MSE)**.
 
-What exactly is MSE? Imagine we have an arbitrary set of points [1, 2, 3, 4, 5, 6, 7]. The mean of this set is 4. Error tells us how far away from the mean each of the points in the set are. For example, there is a difference of 3 between 1 (the first element) and the mean. MSE is simply the square of the difference, which for the case of 1 is 9 (since 3^2 = 9). Basically, the farther the points lie from the mean, the larger our MSE will be. The goal of linear regression is to find a best fit line with the smallest possible MSE.
+What exactly is MSE? Imagine we have an arbitrary set of points [1, 2, 3, 4, 5, 6, 7]. The mean of this set is 4. Error tells us how far away from the mean each of the points in the set are. For example, there is a difference of 3 between 1 (the first element) and the mean. MSE is simply the square of the difference. Take the point 1, the squared error is 9 (since 3^2 = 9). We take all points and find the find the average error giving us MSE. Basically, the farther the points lie from the mean, the larger our MSE will be. The goal of linear regression is to find a best fit line with the smallest possible MSE.
 
 What is the point of squaring the error? We square the error for two reasons:
 1. to ensure that the difference is always positive
 2. to emphasize larger differences (similar reasoning behind log scale)
 
-###### TODO: add image
+**This video explains linear regression using MSE really well:**
+
+[![MSE](http://img.youtube.com/vi/ZkjP5RJLQF4/0.jpg)](https://www.youtube.com/watch?v=ZkjP5RJLQF4)
 
 #### Gradient Descent
 
-###### TODO: add math behind gradient descent
-
+I will be writing a separate document for gradient descent which you can find [here](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/gradient_descent/gradient_descent.md).
 
 #### How to evaluate performance of Linear Regression
 
