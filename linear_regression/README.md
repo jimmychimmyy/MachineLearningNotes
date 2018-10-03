@@ -102,7 +102,7 @@ What is the point of squaring the error? We square the error for two reasons:
 
 #### Gradient Descent
 
-I will be writing a separate document for gradient descent which you can find [here](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/gradient_descent/gradient_descent.md).
+I will be writing a separate document for gradient descent which you can find [here](https://github.com/jimmychimmyy/machine_learning_notes/blob/master/gradient_descent/README.md).
 
 #### How to evaluate performance of Linear Regression
 
