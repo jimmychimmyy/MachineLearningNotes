@@ -9,6 +9,36 @@ Below are links to see Logistic Regression in action
 
 #### How does it work?
 
+```
+Let x_i be an input feature vector with length n
+Let m = number of input feature vectors
+Let a_i be a vector that is same length as x_i
+
+p(y_i|x_i) = 1 / 1 + e^z where z = a_i * x_i + b
+can also be written as: e^z / (1 + e^z)
+```
+
+#### Loss function
+
+```
+L(a_i, b|X, y) = - log p(Y|X, a_i, b)
+= log ∏[p(y_i|x_i, a_i, b)]
+
+
+∂L/∂a_ij = sum_i:1_n[y - p(y_i=1|x_i, b, a_i) * x_ij]
+```
+
+### Multinomial Logistic Regression
+
+```
+p(y_i = c_j|x_i) = e^z / sum_l:1_k[e^y]
+where z = x_i * a_j + b_j
+where y  = x_i * a_l + b_l
+
+each class c_j has its own classification parameters a_j and b_j
+there are k total classes
+```
+
 #### Algorithm:
 
 ###### Parameters:

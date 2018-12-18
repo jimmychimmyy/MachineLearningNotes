@@ -19,7 +19,40 @@ According to Apache,
 #### How do I use spark?
 
 
+#### What is RDD?
+Resilient Distributed Datasets (RDD) is an abstract data type that supports structured and semi-structured data. Each dataset in RDD is divided into logical partitions and can be computed on different nodes of the cluster.
+
+Two ways to create RDDs:
+1. parallelizing an existing collection in your driver program
+2. referencing a dataset in external storage system (such as HDFS or any data source offering a Hadoop Input Format)
+
+Spark makes use of the concept of RDD to achieve faster and efficient MapReduce operations.
+
+#### Spark Dataframe:
+* **Immutable**
+* **Lazy Evaluations** task is not executed until an action is performed
+* **Distributed**
+
+These characteristics are common to both Spark Dataframes and RDDs.
+
+#### Setting Up:
+
+You must always create a Spark Context which is required to execute operations in a cluster.
+
+```
+from pyspark import SparkContext
+sc = SparkContext()
+```
+
+In order to use Spark Dataframe, you must do the same with SQLContext.
+
+```
+sqlContext = SQLContext(sc)
+```
+
+
 #### Sources
 * http://spark.apache.org/
 * https://www.quora.com/Why-is-Apache-Spark-used
 * https://data-flair.training/blogs/6-important-reasons-to-learn-apache-spark/
+* https://www.tutorialspoint.com/apache_spark/apache_spark_introduction.htm

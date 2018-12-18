@@ -110,9 +110,9 @@ Basically, you can think of this as k-fold cross validation for classification p
 
 In leave-one-out (LOO-XVE), we use all the training data, save one instance, to train the model. Like k-folds, we repeat this process **M** times, where **M = total number of instances**. We sum the error and get an average.
 
-###### When should I use Cross-Validation?
+##### TODO When should I use Cross-Validation?
 
-###### What is the ideal ratio of Training:Validation:Testing?
+##### TODO What is the ideal ratio of Training:Validation:Testing?
 
 #### Sources
 1. https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f
@@ -123,3 +123,47 @@ In leave-one-out (LOO-XVE), we use all the training data, save one instance, to 
 6. https://machinelearningmastery.com/k-fold-cross-validation/
 
 ## <a name='mle'></a> Maximum Likelihood Estimation (MLE)
+*"Maximum likelihood estimation is a method that determines values for the parameters of a model. The parameter values are such that they maximize the likelihood that the process described by the model produced the data were actually observed"*
+
+So what does this actually mean? In short, its a method to find the best fitting parameters for your model.
+
+#### TODO How does MLE work?
+
+First off, assume that all your x are independent.
+
+MLE is a method that can estimate population parameters such as mean, variance, rate, etc) from sample data such that the probability of obtaining the observed data is maximized.
+
+It is important to note that the width and height of a bell curve is represented by mean and variance, respectively.
+
+Think of MLE as when you are given a set of data, how do you find the probability distribution that best represents the given data?
+###### So what do the parameters of this probability distribution have to do with the coefficients of our model?
+
+Basically, you have the function: `f(x | theta)` where you have x1, ..., xn. So x is known to us, but we do not know the value of theta. In order to find theta we use the likelihood function: `L(theta | x1 ... xn)`.
+
+```
+L(theta | x1 ... xn)
+= f(x1 ... xn | theta)
+= f(x1 | theta) * f(x1 | theta) * ... * f(xn | theta)
+```
+
+MLE = value of theta that maximizes `L(theta | x1 ... xn)`
+
+#### What is log likelihood?
+
+It is simply the log of MLE.
+
+Recall that:
+```
+log(a*b) = log(a) + log(b)
+```
+By taking the log or MLE, we drastically reduce the calculations required to find the optimal value of theta.
+
+*TODO add proof for clarification*
+
+#### TODO When to use MLE?
+
+#### Sources
+1. https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1
+2. https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likelihood-estimation-case-study-r/
+3. https://wangda.live/2017/11/30/maximum-likelihood-estimation-cross-entropy-and-de/
+4. https://www.youtube.com/watch?v=93fPFOf547Q
